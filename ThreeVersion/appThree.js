@@ -49,7 +49,13 @@ var camera = new THREE.PerspectiveCamera( 60, window.innerWidth/window.innerHeig
 
 var renderer = new THREE.WebGLRenderer({
     antialias: true,
-    alpha: true
+    alpha: true,
+
+    logarithmicDepthBuffer: true,
+    
+    colorManagement: true,
+    
+    sortObjects: true
 });
 
 renderer.setClearColor(new THREE.Color('lightgrey'), 0)
