@@ -45,7 +45,7 @@ var onRenderFcts= [];
 
 var scene = new THREE.Scene();
 
-var camera = new THREE.PerspectiveCamera( 60, window.innerWidth/window.innerHeight, 1, 1000 );
+var camera = new THREE.PerspectiveCamera( 60, window.innerWidth/window.innerHeight, 0.1, 1000 );
 
 var renderer = new THREE.WebGLRenderer({
     antialias: true,
